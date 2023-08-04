@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIZZA NOVA</title>
+    <meta name="author" content="Dev Patel" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Add heading for the page -->
+        <h1 id="heading">PIZZA NOVA</h1>
+    </header>
+    <main>
+        <!-- Add an image with alt text -->
+        <img id="adImg" src="./CSS/IMG/PIZZA.png" alt="Three photos of delicious pizza" />
+        <form action="" method="POST">
+            <!-- Fieldset to group related form elements -->
+            <fieldset>
+                <!-- Legend for the fieldset -->
+                <legend>To order Your Pizza</legend>
+
+                <section class="firstName">
+                    <!-- Label and input field for first name -->
+                    <label for="firstName">First Name:</label>
+                    <input type="text" required autofocus placeholder="First Name" id="firstName" name="firstName" />
+                </section>
+                <br />
+
+                <section class="lastName">
+                    <!-- Label and input field for last name -->
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" required placeholder="Last Name" id="lastName" name="lastName" />
+                </section>
+                <br />
+
+                <section class="email">
+                    <!-- Label and input field for email -->
+                    <label for="email">Email:</label>
+                    <input type="email" required placeholder="emailid@icloud.com" id="email" name="email" />
+                </section>
+                <br />
+
+                <section class="PizzaTypes">
+                    <!-- Label and select field for pizza type -->
+                    <label for="pizzaTypes">Choose Pizza:</label>
+                    <select name="pizzaTypes" id="typePizza" required>
+                        <option value="">--Select a Pizza--</option>
+                        <option value="7-cheese">7-Cheese</option>
+                        <option value="Margherita">Margherita</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="mushrooms">Mushrooms</option>
+                    </select>
+                </section>
+                <br />
+
+                <section class="foodPreference">
+                    <!-- Radio buttons for food preference -->
+                    <label for="pizzaType">Pizza Type:</label>
+                    <label for="veg">Veg</label>
+                    <input type="radio" id="veg" name="pizzaType" value="vegetarian" checked>
+                    <label for="nonveg">Non-veg</label>                    
+                    <input type="radio" id="nonveg" name="pizzaType" value="non-vegetarian">
+                </section>
+                <br />
+
+                <section class="extraOptions">
+                    <!-- Checkboxes for extra cheese and extra sauce -->
+                    <section class="extraSauce">
+                    <label for="moreSauce">Extra Sauce:</label>
+                    <input type="checkbox" id="moreSauce" name="moreSauce" value="yes" />
+                    </section>
+                    <br>
+                    <section class="extraCheese">
+                    <label for="moreCheese">Extra Cheese:</label>
+                    <input type="checkbox" id="moreCheese" name="moreCheese" value="yes" />
+                    </section>
+                        
+                        
+
+                </section>
+                <br />
+
+                <section class="quantity">
+                    <!-- Label and input field for quantity -->
+                    <label for="quantity">How Many Pizza?</label>
+                    <input type="number" required placeholder="1" id="quantity" name="quantity" />
+                </section>
+                <br />
+
+                <section class="telephone">
+                    <!-- Label and input field for telephone -->
+                    <label for="telephone">Telephone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+1 (123)456-7890" required />
+                </section>
+                <br />
+
+                <section class="address">
+                    <!-- Label and textarea for address -->
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="6" cols="30" placeholder="Enter your address"
+                        required></textarea>
+                </section>
+                <br />
+
+                <section class="postalCode">
+                    <!-- Label and input field for PIN/Postal code -->
+                    <label for="postal_code">PIN/Postal Code:</label>
+                    <input type="text" id="postal_code" name="postal_code" placeholder="Enter your PIN/Postal Code"
+                        required />
+                </section>
+                <br />
+
+                <section class="city">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required />
+                </section>
+                <br />
+
+                <section class="province">
+                    <label for="province">Province/State:</label>
+                    <input type="text" id="province" name="province" placeholder="Enter your province or state"
+                        required />
+                </section>
+                <br />
+
+                <section class="additional notes">
+                    <label for="additional notes">Additional note for your order:</label>
+                    <textarea id="additional notes" name="additional notes" rows="3" cols="25" placeholder="Enter Notes" required></textarea>
+                </section>
+                <br />
+
+                <section class="orderButton">
+                    <!-- Button to submit the form -->
+                    <button type="submit">Order Here</button>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+    <footer id="#footer">
+        <!-- Follow us on social media section -->
+        <p>Keep tracking new offers on social media:</p>
+        <menu>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </menu>
+
+        <!-- Contact us section -->
+        <p>Contact us:</p>
+        <menu>
+            <li>Phone: 489-456-7890</li>
+            <li>Email: info@pizzanova.com</li>
+            <li>Address: 007 Anonimous street, New Yourk, USA</li>
+        </menu>
+
+        <!-- Copyright section -->
+        <p>&copy; 2023 Pizza Nova. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
